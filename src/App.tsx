@@ -12,15 +12,19 @@ const ButtonComponent = () => {
 
 function App() {
   return (
-    <div className={"bg-white flex flex-col items-center"}>
+    <div className={"bg-white flex flex-col items-center justify-center h-screen"}>
       <Sheet>
-        <SheetTrigger>Click me to open</SheetTrigger>
+        <SheetTrigger>
+          <button className={'bg-gray-100 p-8 text-2xl'}>
+            Click me to open
+          </button>
+        </SheetTrigger>
         <SheetContent className={"bg-white"}>
           <SheetDescription asChild>
             <ul>
               <li>
                 <SheetClose asChild>
-                  <button className={'p-4 text-xl bg-green-100'}>Click me an I work :)</button>
+                  <button className={'p-4 text-xl bg-green-100'}>Click me and I work :)</button>
                 </SheetClose>
               </li>
               <li>
