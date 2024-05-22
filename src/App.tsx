@@ -7,24 +7,44 @@ import {
 } from "@/components/ui/sheet";
 
 const ButtonComponent = () => {
-  return <button className={'p-4 text-xl bg-red-100'}>Click me and I don't work :(</button>;
+  return (
+    <div
+      className={
+        "p-4 text-xl bg-red-100 my-2 rounded hover:bg-red-200 transition cursor-pointer"
+      }
+    >
+      Click me and I don't work :(
+    </div>
+  );
 };
 
 function App() {
   return (
-    <div className={"bg-white flex flex-col items-center justify-center h-screen"}>
+    <div
+      className={"bg-white flex flex-col items-center justify-center h-screen"}
+    >
       <Sheet>
         <SheetTrigger>
-          <button className={'bg-gray-100 p-8 text-2xl'}>
+          <div
+            className={
+              "bg-gray-100 hover:bg-gray-200 transition p-8 text-2xl rounded cursor-pointer"
+            }
+          >
             Click me to open
-          </button>
+          </div>
         </SheetTrigger>
         <SheetContent className={"bg-white"}>
           <SheetDescription asChild>
             <ul>
               <li>
                 <SheetClose asChild>
-                  <button className={'p-4 text-xl bg-green-100'}>Click me and I work :)</button>
+                  <div
+                    className={
+                      "p-4 text-xl bg-green-100 my-2 rounded hover:bg-green-200 transition cursor-pointer"
+                    }
+                  >
+                    Click me and I work :)
+                  </div>
                 </SheetClose>
               </li>
               <li>
