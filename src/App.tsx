@@ -30,7 +30,7 @@ function App() {
               "bg-gray-100 hover:bg-gray-200 transition p-8 text-2xl rounded cursor-pointer"
             }
           >
-            Click me to open
+            Click me to open heloo world
           </div>
         </SheetTrigger>
         <SheetContent className={"bg-white"}>
